@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Outdated Price Launch",
+    "text": "Get the new Apex Shell Jacket for only $149 this winter season.",
+    "expected": [
+      {"category": "claims", "source_code": "FACT-02", "excerpt": "$149"}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Banned Term Cheap",
+    "text": "This cheap alternative is ideal for day hikes in the mountains.",
+    "expected": [
+      {"category": "terminology", "source_code": "NOV-TERM-01", "excerpt": "cheap alternative"}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Unsubstantiated Customer Metric",
+    "text": "Surveys prove that 98% of customers prefer us over all other outdoor brands.",
+    "expected": [
+      {"category": "claims", "source_code": "FACT-01", "excerpt": "98%"}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Unqualified Superlative Best",
+    "text": "Experience the absolute best outdoor shell jacket ever created.",
+    "expected": [
+      {"category": "claims", "source_code": "NOV-CLM-02", "excerpt": "the absolute best"}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Aggressive Tone Urgency",
+    "text": "Buy this now or you will regret it once the first blizzard hits.",
+    "expected": [
+      {"category": "tone", "source_code": "NOV-TONE-02", "excerpt": "buy this now or you will regret it"}
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Shaming Slacker Copy",
+    "text": "Don't be lazy and stay on the couch all autumn while others explore.",
+    "expected": [
+      {"category": "tone", "source_code": "NOV-TONE-02", "excerpt": "Don't be lazy"}
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Extreme Altitude Claim",
+    "text": "Engineered for stratospheric peaks and tested up to 50,000 feet in storms.",
+    "expected": [
+      {"category": "claims", "source_code": "NOV-CLM-04", "excerpt": "50,000 feet"}
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Banned Term Waterproof Claim",
+    "text": "Our light trail jacket offers 100% waterproof protection in torrential rain.",
+    "expected": [
+      {"category": "claims", "source_code": "NOV-TERM-02", "excerpt": "waterproof"}
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Vague Eco-Friendly Buzzword",
+    "text": "Our eco-friendly daypack supports sustainable hiking.",
+    "expected": [
+      {"category": "claims", "source_code": "NOV-TERM-04", "excerpt": "eco-friendly"}
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Alarmist Solo Hiking Copy",
+    "text": "When hiking alone in high ridges, always pack an emergency beacon.",
+    "expected": [
+      {"category": "tone", "source_code": "NOV-TERM-05", "excerpt": "hiking alone"}
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Conquest of Nature Ethos",
+    "text": "Gear up with Nova and conquer the mountain this weekend.",
+    "expected": [
+      {"category": "tone", "source_code": "NOV-TONE-04", "excerpt": "conquer the mountain"}
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Violent Slang Term",
+    "text": "Built with bulletproof construction for rocky scrambles.",
+    "expected": [
+      {"category": "terminology", "source_code": "NOV-TONE-03", "excerpt": "bulletproof"}
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Failing WCAG Contrast Ratio",
+    "text": "Featured visual accents utilize #DDA15E over #F8F9FA cards.",
+    "expected": [
+      {"category": "accessibility", "source_code": "NOV-ACC-02", "excerpt": "#DDA15E over #F8F9FA"}
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Missing Image Alt Text",
+    "text": "Check our trail setup: <img src=\"/images/tent.jpg\" /> on the alpine ridge.",
+    "expected": [
+      {"category": "accessibility", "source_code": "NOV-ACC-01", "excerpt": "<img src=\"/images/tent.jpg\" />"}
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Unsubstantiated No 1 Ranking",
+    "text": "Proudly recognized as the No.1 ranked expedition gear in the world by our fans.",
+    "expected": [
+      {"category": "claims", "source_code": "NOV-CLM-02", "excerpt": "No.1 ranked expedition gear in the world"}
+    ]
+  }
+]
