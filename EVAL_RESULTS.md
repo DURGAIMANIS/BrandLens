@@ -1,5 +1,5 @@
 # BrandLens Evaluation Results
-**Benchmark Run**: 2026-11-04 05:29:53 UTC
+**Benchmark Run**: 2026-11-04 05:44:46 UTC
 **Test Suite**: 15 Golden Drafts with planted brand issues across all categories
 
 ## Summary Metrics Table
