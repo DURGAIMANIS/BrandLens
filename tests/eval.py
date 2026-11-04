@@ -15,7 +15,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from sqlmodel import Session, select, create_engine
-from sqlmodel.pool import StaticPool
+from sqlalchemy.pool import StaticPool
 
 from backend.models import Clause, Fact, Term, SQLModel
 from backend.seed_data import SEED_CLAUSES, SEED_FACTS, SEED_TERMS
