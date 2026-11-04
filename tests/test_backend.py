@@ -7,9 +7,15 @@ Unit and integration tests for BrandLens backend:
 - /health and /api/library verification
 """
 
+import os
+import sys
+
+# Ensure repository root is on sys.path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pytest
 from fastapi.testclient import TestClient
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel import Session, SQLModel, create_engine, select
 from sqlmodel.pool import StaticPool
 
 from backend.main import app
@@ -66,9 +72,9 @@ def test_get_library(client: TestClient):
     assert len(data["sample_drafts"]) == 3
 
 def test_deterministic_checks_and_verifier(session: Session):
-    clauses = list(session.query(Clause).all())
-    facts = list(session.query(Fact).all())
-    terms = list(session.query(Term).all())
+    clauses = list(session.exec(select(Clause)).all())
+    facts = list(session.exec(select(Fact)).all())
+    terms = list(session.exec(select(Term)).all())
     clauses_by_code = {c.code: c for c in clauses}
     facts_by_code = {f.code: f for f in facts}
 
@@ -103,8 +109,8 @@ def test_deterministic_checks_and_verifier(session: Session):
         assert v["source_code"] in clauses_by_code or v["source_code"] in facts_by_code
 
 def test_verifier_drops_fake_quote_and_unknown_code(session: Session):
-    clauses = list(session.query(Clause).all())
-    facts = list(session.query(Fact).all())
+    clauses = list(session.exec(select(Clause)).all())
+    facts = list(session.exec(select(Fact)).all())
     clauses_by_code = {c.code: c for c in clauses}
     facts_by_code = {f.code: f for f in facts}
 
@@ -177,7 +183,6 @@ def test_full_draft_workflow_api(client: TestClient):
     review_resp = client.post(f"/api/drafts/{draft_id}/review", json={})
     assert review_resp.status_code == 200
     review_data = review_resp.json()
-    print("FINDINGS IN TEST:", review_data["findings"])
     assert len(review_data["findings"]) >= 2
     # Check that $149 was flagged with FACT-02
     price_finding = next((f for f in review_data["findings"] if f["excerpt"] == "$149"), None)
