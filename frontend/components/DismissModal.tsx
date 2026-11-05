@@ -117,3 +117,4 @@ export default function DismissModal({ finding, isOpen, onClose, onConfirm }: Di
     </div>
   );
 }
+

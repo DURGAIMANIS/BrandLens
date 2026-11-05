@@ -77,3 +77,4 @@ export default function AINoticeModal({ notice, isOpen, onClose }: AINoticeModal
     </div>
   );
 }
+

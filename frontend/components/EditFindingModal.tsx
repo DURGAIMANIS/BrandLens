@@ -86,3 +86,4 @@ export default function EditFindingModal({ finding, isOpen, onClose, onConfirm }
     </div>
   );
 }
+

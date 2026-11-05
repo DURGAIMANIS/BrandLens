@@ -158,3 +158,4 @@ def verify_and_clean_findings(
 
     logger.info(f"Verifier kept {len(non_overlapping)} findings, dropped {dropped_count}")
     return non_overlapping, dropped_count
+

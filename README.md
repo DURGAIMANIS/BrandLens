@@ -206,3 +206,4 @@ Open `http://localhost:3000` in your browser.
 - **Human in the Loop**: AI never changes copy automatically. Every change requires an explicit user action.
 - **Traceability**: Every finding quotes an approved clause or fact verbatim.
 - **Substantiated Claims**: Claims without a verified fact are labeled `"Unsupported (no approved source)"`, never falsely asserted.
+

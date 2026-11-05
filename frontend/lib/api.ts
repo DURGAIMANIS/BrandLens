@@ -324,3 +324,4 @@ export async function uploadFile(file: File): Promise<UploadResponse> {
 export async function fetchInsights(): Promise<InsightsResponse> {
   return request<InsightsResponse>("/api/insights");
 }
+

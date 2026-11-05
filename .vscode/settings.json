@@ -10,3 +10,4 @@
   "python.testing.pytestPath": "${workspaceFolder}/backend/venv/Scripts/pytest",
   "python.testing.unittestEnabled": false
 }
+

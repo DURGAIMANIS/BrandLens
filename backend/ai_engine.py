@@ -150,3 +150,4 @@ def run_ai_review(
     except Exception as exc:
         logger.warning(f"AI call failed ({exc}); falling back gracefully to rule-based mode.")
         return [], False, "Rule-based Engine (Fallback)", text_preview, "AI unavailable, rule-based mode"
+

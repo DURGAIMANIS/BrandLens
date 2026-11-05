@@ -39,3 +39,4 @@ export function RoleProvider({ children }: { children: React.ReactNode }) {
 export function useRole() {
   return useContext(RoleContext);
 }
+

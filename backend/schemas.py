@@ -85,3 +85,4 @@ class InsightsResponse(BaseModel):
     by_clause: List[Dict[str, Any]]
     dismissal_rate_per_clause: List[Dict[str, Any]]
     status_counts: Dict[str, int]
+
